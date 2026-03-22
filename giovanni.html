@@ -2,12 +2,160 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=>, initial-scale=1.0">
-  <title>Portfólio_Giovanni</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giovanni — Portfólio Coletivo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Curiosidade do Giovanni:</h1>
-  <h2>Minha mãe queria que meu nome fosse tonhão</h2>
-  <p>portfólio... para o meu pálio</p>
+
+  <header>
+    <h1><a href="index.html" class="logo-link">Portfólio Coletivo <span>Grupo A</span></a></h1>
+    <nav>
+      <ul id="menu">
+        <li><a href="igor.html">Igor</a></li>
+        <li><a href="portfolioGustavo.html">Gustavo</a></li>
+        <li><a href="giovanni.html" class="active">Giovanni</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="portfolio-page">
+    <section class="hero-profile" id="topo">
+      <div class="hero-text">
+        <p class="section-label no-line">Perfil</p>
+        <h2 class="profile-title">Olá, mundo! <span>👋</span></h2>
+        <p class="profile-subtitle">
+          Assistente de Segurança da Informação | Dev em formação | Curioso por redes, Linux e dados
+        </p>
+
+        <div class="badge-list">
+          <span class="custom-badge badge-green">SecInfo Assistant</span>
+          <span class="custom-badge badge-blue">FATEC Multiplataforma</span>
+          <span class="custom-badge badge-dark">Linux Fedora</span>
+          <span class="custom-badge badge-orange">Always Learning</span>
+        </div>
+
+        <blockquote class="profile-quote">
+          “Build, break, learn, repeat.”
+        </blockquote>
+      </div>
+
+      <div class="hero-photo-card">
+        <div class="profile-photo">
+          <img src="images/giovanni.png" alt="Foto de Giovanni">
+        </div>
+        <div class="profile-photo-info">
+          <p class="card-index">03 — Membro</p>
+          <h3>Giovanni</h3>
+          <p>Segurança da Informação • Linux • Redes • Desenvolvimento</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="summary-box">
+      <h3>Sumário</h3>
+      <div class="summary-links">
+        <a href="#sobre">Sobre mim</a>
+        <a href="#trabalho">Trabalho</a>
+        <a href="#estudos">Estudos</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+      </div>
+    </section>
+
+    <section class="content-grid">
+      <article class="info-panel" id="sobre">
+        <h3>🙋 Sobre mim</h3>
+        <p>
+          Sou <strong>Assistente de Segurança da Informação</strong> com foco em
+          <strong>governança e prática</strong>, apaixonado por <strong>Linux</strong>,
+          <strong>redes</strong> e <strong>tecnologias novas e antigas</strong>.
+        </p>
+      </article>
+
+      <article class="info-panel" id="trabalho">
+        <h3>💼 Trabalho</h3>
+        <ul>
+          <li>
+            Atualmente, atuo como <strong>Assistente de Segurança da Informação</strong>
+            em uma empresa de benefícios, ajudando com
+            <strong>processos, análises de risco e gestão de acesso</strong>.
+          </li>
+        </ul>
+      </article>
+
+      <article class="info-panel" id="estudos">
+        <h3>📚 Estudos</h3>
+        <ul>
+          <li><strong>Fatec</strong> — Desenvolvimento de Software Multiplataforma</li>
+          <li><strong>UFABC</strong> — Ciência da Computação &amp; Biotecnologia <em>(interrompidos, mas com aprendizado)</em></li>
+          <li>
+            Cursos livres em <strong>redes</strong>, <strong>segurança da informação</strong>,
+            <strong>Linux</strong> e <strong>desenvolvimento de software</strong>
+          </li>
+        </ul>
+
+        <details class="details-panel">
+          <summary><strong>Trilhas recentes</strong></summary>
+          <ul>
+            <li>ISO 27001/27701 e governança</li>
+            <li>Power BI para métricas</li>
+            <li>Docker e boas práticas de serviços web</li>
+            <li>Fundamentos de Java/Spring e integração com front-end</li>
+          </ul>
+        </details>
+      </article>
+
+      <article class="info-panel" id="projetos">
+        <h3>🗂 Projetos</h3>
+        <div class="project-card">
+          <h4>FreteJá</h4>
+          <p>
+            Plataforma de <strong>cotação de fretes</strong> para empresas
+            <em>(projeto acadêmico em evolução)</em>.
+          </p>
+
+          <ul class="project-list">
+            <li><strong>Back-end:</strong> Java 21 + Spring Boot (Web, Security, Data MongoDB)</li>
+            <li><strong>Front-end:</strong> Thymeleaf + Tailwind</li>
+            <li><strong>Infra:</strong> Docker + Docker Compose</li>
+            <li><strong>Segurança:</strong> JWT, BCrypt, HTTPS</li>
+          </ul>
+
+          <a href="https://github.com/giovanni-nunes04" target="_blank" class="project-button">Ver GitHub</a>
+        </div>
+      </article>
+
+      <article class="info-panel" id="contato">
+        <h3>📫 Contato</h3>
+        <ul class="contact-links">
+          <li>
+            <strong>LinkedIn:</strong>
+            <a href="https://www.linkedin.com/in/giovanni-nunes04" target="_blank">
+              linkedin.com/in/giovanni-nunes04
+            </a>
+          </li>
+          <li>
+            <strong>GitHub:</strong>
+            <a href="https://github.com/giovanni-nunes04" target="_blank">
+              github.com/giovanni-nunes04
+            </a>
+          </li>
+        </ul>
+      </article>
+    </section>
+
+    <div class="back-top">
+      <a href="#topo">↑ Voltar ao topo</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>Portfólio Coletivo — Grupo A</p>
+    <p>Página de Giovanni</p>
+  </footer>
+
 </body>
 </html>
